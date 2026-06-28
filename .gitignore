@@ -1,0 +1,8 @@
+# Локальная сборка (на GitHub всё собирается заново)
+_site/
+
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+Vyacheslav_EGE_Audit_2026.pdf

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Аудит подготовки Вячеслава к ЕГЭ-2026 по профильной математике">
+<title>Аудит подготовки — Вячеслав — ЕГЭ-2026</title>
+<link rel="stylesheet" href="./css/styles.css">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(','\\)'], ['$', '$']] },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Профильная математика · ЕГЭ 2026</div>
+    <h1>Полный аудит подготовки к&nbsp;ЕГЭ</h1>
+    <div class="student-name">Вячеслав</div>
+    <div class="meta">Февраль — Июнь 2026 &nbsp;·&nbsp; Экзамен: 8 июня &nbsp;·&nbsp; Отчёт о подготовке</div>
+  </div>
+</header>
+
+<!-- ═══════════ KPI ═══════════ -->
+<div class="kpi-strip">
+  <div class="kpi"><div class="val">+87 п.п.</div><div class="lbl">Средний прирост знаний</div></div>
+  <div class="kpi"><div class="val">86</div><div class="lbl">Макс. пробник (вторичные)</div></div>
+  <div class="kpi"><div class="val">64</div><div class="lbl">Экзамен (вторичные)</div></div>
+  <div class="kpi"><div class="val">100%</div><div class="lbl">Банк ФИПИ пройден</div></div>
+  <div class="kpi"><div class="val">87%</div><div class="lbl">Совпадение варианта ДВ</div></div>
+</div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav-wrap">
+  <div class="nav">
+    <a href="#progress">Баллы</a>
+    <a href="#path">Путь</a>
+    <a href="#topics">Темы</a>
+    <a href="#fipi">ФИПИ</a>
+    <a href="#exam-day">8 июня</a>
+    <a href="#audit">Аудит бланков</a>
+    <a href="#behavior">Поведение</a>
+    <a href="#summary">Итоги</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- ═══════════ 1. PROGRESS ═══════════ -->
+<section class="block" id="progress">
+  <h2><span class="num">1</span> Динамика баллов по месяцам</h2>
+  <p>Минимальные и максимальные результаты на контрольных и пробниках. Вторичные баллы — по официальной шкале ЕГЭ-2026 (30 первичных = 100 вторичных). Условная школьная оценка: «2» — 0–26, «3» — 27–49, «4» — 50–69, «5» — 70+.</p>
+  <p><em>Февраль–март: низкие баллы — идёт ликвидация пробелов 7–9 кл., не формат ЕГЭ. Апрель–июнь: реальная подготовка к экзамену — резкий рост.</em></p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Месяц</th><th>Мин.<br>перв.</th><th>Макс.<br>перв.</th>
+          <th>Мин.<br>втор.</th><th>Макс.<br>втор.</th>
+          <th>Мин.<br>%</th><th>Макс.<br>%</th><th>Оценка</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Февраль</td><td>2</td><td>4</td><td>11</td><td>22</td><td>11%</td><td>22%</td><td>2 – 2</td></tr>
+        <tr><td>Март</td><td>3</td><td>5</td><td>17</td><td>27</td><td>17%</td><td>27%</td><td>2 – 3</td></tr>
+        <tr><td>Апрель</td><td>6</td><td>10</td><td>34</td><td>58</td><td>34%</td><td>58%</td><td>4 – 4</td></tr>
+        <tr><td>Май</td><td>10</td><td>16</td><td>58</td><td>78</td><td>58%</td><td>78%</td><td>4 – 5</td></tr>
+        <tr><td>Июнь (до экз.)</td><td>17</td><td>20</td><td>80</td><td>86</td><td>80%</td><td>86%</td><td>5 – 5</td></tr>
+        <tr class="highlight"><td><strong>Экзамен 08.06</strong></td><td>11</td><td>11</td><td>64</td><td>64</td><td>64%</td><td>64%</td><td><strong>4</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <img class="chart" src="./charts/monthly_progress.png" alt="Динамика баллов по месяцам" loading="lazy">
+  <img class="chart" src="./charts/growth_trajectory.png" alt="Траектория роста" loading="lazy">
+
+  <h3>Шкала перевода ЕГЭ-2026</h3>
+  <div class="tables-grid">
+    <div class="table-wrap">
+      <table style="min-width:280px">
+        <thead><tr><th>Перв.</th><th>Втор.</th><th>%</th><th>Оценка</th></tr></thead>
+        <tbody>
+          <tr><td>5</td><td>27</td><td>27%</td><td>3</td></tr>
+          <tr><td>7</td><td>40</td><td>40%</td><td>4</td></tr>
+          <tr><td>11</td><td>64</td><td>64%</td><td>4</td></tr>
+          <tr><td>12</td><td>70</td><td>70%</td><td>5</td></tr>
+          <tr class="highlight"><td>20</td><td>86</td><td>86%</td><td>5</td></tr>
+          <tr><td>30</td><td>100</td><td>100%</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap">
+      <table style="min-width:200px">
+        <thead><tr><th>Задание</th><th>Баллы</th></tr></thead>
+        <tbody>
+          <tr><td>№1–12</td><td>по 1</td></tr>
+          <tr><td>№13, 15, 16</td><td>по 2</td></tr>
+          <tr><td>№14, 17</td><td>по 3</td></tr>
+          <tr><td>№18–19</td><td>по 4</td></tr>
+          <tr class="highlight"><td>Итого</td><td>32</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 2. PREPARATION PATH ═══════════ -->
+<section class="block" id="path">
+  <h2><span class="num">2</span> Путь подготовки: две фазы и реальные сроки</h2>
+
+  <div class="callout callout-info">
+    <div class="callout-title">Важно понимать структуру подготовки</div>
+    <p style="margin:0">Формально занятия шли с февраля по июнь — <strong>5 месяцев</strong>. Но фактически <strong>непосредственная подготовка к прототипам ЕГЭ</strong> заняла <strong>последние 2 месяца</strong> (апрель — июнь). Первые 2 месяца ушли на ликвидацию пробелов, накопленных ещё с 7 класса.</p>
+  </div>
+
+  <h3>Фаза 1 — Февраль и март: ликвидация пробелов (7–9 класс)</h3>
+  <p>На пробном занятии выявлен <strong>крайне низкий уровень знаний</strong>. Диагностика показала, что значительная часть базовых тем — дроби, степени, простые уравнения, элементы геометрии, проценты — <strong>не усвоены или забыты</strong>, начиная ещё с программы 7 класса.</p>
+  <p>Чтобы перейти к решению прототипов из открытого банка ФИПИ, необходимо было <strong>сначала восстановить фундамент</strong> — пройти темы прошлых лет, без которых большинство заданий ЕГЭ просто не решаются. Именно этим и занимались первые два месяца:</p>
+  <ul>
+    <li>Арифметика и дроби, степени, корни — «с нуля»;</li>
+    <li>Линейные и квадратные уравнения — повторение и закрепление;</li>
+    <li>Базовая планиметрия: треугольники, углы, площади;</li>
+    <li>Проценты, пропорции, текстовые задачи начального уровня;</li>
+    <li>Элементы функций и графиков.</li>
+  </ul>
+  <p>На этом этапе результаты пробников оставались низкими (11–27 вторичных баллов) — это <strong>нормально</strong>, потому что мы ещё не выходили на формат ЕГЭ, а закрывали дыры в базовой математике.</p>
+
+  <div class="cards-grid">
+    <div class="feature-card" style="border-left:4px solid var(--warn)">
+      <h4>Февраль — март</h4>
+      <p><strong>Ликвидация пробелов</strong> с 7–9 класса. Стартовый уровень — 11–17% по темам. К ЕГЭ-прототипам не переходили.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--success)">
+      <h4>Апрель — июнь</h4>
+      <p><strong>Реальная подготовка к ЕГЭ</strong>: прототипы ФИПИ, полные варианты, 2-я часть. Рост с 34% до 86% на пробнике.</p>
+    </div>
+  </div>
+
+  <h3>Фаза 2 — Апрель и май–июнь: подготовка к ЕГЭ</h3>
+  <p>Только после восстановления базы началась системная работа с открытым банком ФИПИ: задания 1–12, затем 13, 15, 16, полные варианты, пробники. Именно за эти <strong>2–2,5 месяца</strong> произошёл основной скачок — с 34 до 86 вторичных баллов на финальном пробнике.</p>
+
+  <h3>Сопротивление теории и метод карточек</h3>
+  <p>Параллельно Вячеслав <strong>очень долго не хотел учить теорию</strong> — формулы, свойства, определения откладывались систематически. Для мотивации я разработал <strong>специальный метод карточек</strong> и создал <strong>отдельный сайт</strong>, чтобы ему было удобно учить материал с телефона. Несмотря на это, к карточкам и теории он <strong>приступил только в последние недели</strong> перед экзаменом.</p>
+
+  <div class="cards-grid">
+    <div class="feature-card">
+      <div class="emoji">🃏</div>
+      <h4>Метод карточек</h4>
+      <p>Я разработал индивидуально: формулы, свойства, типовые шаги — в формате быстрых карточек для повторения.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">🌐</div>
+      <h4>Отдельный сайт</h4>
+      <p>Я создал персональный сайт для удобного изучения теории — адаптивный, с прогрессом по темам.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">⏰</div>
+      <h4>Откладывание</h4>
+      <p>До последних недель теория фактически не изучалась. Домашние работы по теории выполнялись нерегулярно.</p>
+    </div>
+  </div>
+
+  <h3>Школа vs подготовка к ЕГЭ</h3>
+  <p>Многие домашние задания выполнялись <strong>в школе между уроками</strong> — поверхностно и без погружения. До последних дней Вячеслав продолжал ходить в школу, где учитель математики давал:</p>
+  <ul>
+    <li><strong>Усложнённые варианты AlexLarin</strong> — задачи, которые <em>не встречаются на ЕГЭ</em>;</li>
+    <li><strong>Школьные темы</strong>, которых <em>нет в кодификаторе ЕГЭ</em>.</li>
+  </ul>
+  <p>В последние месяцы было предложено <strong>отодвинуть школу на второй план</strong> и посвятить освободившееся время самоподготовке по программе ЕГЭ. <strong>Этого сделано не было.</strong></p>
+
+  <div class="progress-item">
+    <div class="progress-label"><span>Время на ЕГЭ-программу</span><span>~45%</span></div>
+    <div class="progress-bar"><div class="progress-fill danger" style="width:45%"></div></div>
+  </div>
+  <div class="progress-item">
+    <div class="progress-label"><span>Время на школьные / AlexLarin задачи</span><span>~55%</span></div>
+    <div class="progress-bar"><div class="progress-fill" style="width:55%;background:linear-gradient(90deg,#94A3B8,#64748B)"></div></div>
+  </div>
+
+  <h3>Увеличение часов занятий</h3>
+  <p>В какой-то момент Вячеслав <strong>захотел повторно пройти первую часть</strong> — отработать задания 1–12 ещё раз. Я понимал, что при оставшемся времени <strong>важнее уделить часы второй части</strong> (номера 13, 15, 16 и далее), где как раз не хватало уверенности.</p>
+  <p>После того как я <strong>набросал план</strong> подготовки на оставшийся период, стало ясно: чтобы успеть и закрепить 1-ю часть, и выйти на 2-ю, нужно <strong>увеличить количество занятий на 10 часов</strong>. Я предложил этот вариант <strong>Светлане</strong>.</p>
+  <p>Светлана посоветовалась <strong>со Славой</strong>, и в итоге было принято решение добавить <strong>только 5 дополнительных часов</strong> — вдвое меньше необходимого. При этом это произошло <strong>лишь в начале мая</strong> (около 10-го числа) — <strong>менее чем за месяц до экзамена</strong>, когда времени на полноценную доработку уже было критически мало.</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">Февраль</div>
+      <div class="tl-title">Диагностика + пробелы с 7 кл.</div>
+      <div class="tl-desc">Крайне низкий уровень. Начало ликвидации базовых пробелов.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Март</div>
+      <div class="tl-title">Продолжение базы 7–9 кл.</div>
+      <div class="tl-desc">Дроби, уравнения, геометрия. К прототипам ЕГЭ ещё не перешли.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Апрель</div>
+      <div class="tl-title">Старт подготовки к ЕГЭ</div>
+      <div class="tl-desc">Прототипы ФИПИ, 1-я часть. Начало реального роста баллов.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Май</div>
+      <div class="tl-title">Метод карточек + сайт</div>
+      <div class="tl-desc">Инструменты для теории созданы. 2-я часть: 13, 15, 16.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">27 мая</div>
+      <div class="tl-title">Задание №9 прорешано</div>
+      <div class="tl-desc">Задача про разряд конденсатора — с теми же числами, что на экзамене.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">~10 мая (+5 ч.)</div>
+      <div class="tl-title">Доп. часы (меньше плана)</div>
+      <div class="tl-desc">Предложено +10 ч., согласовано +5. Менее месяца до экзамена.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Июнь</div>
+      <div class="tl-title">Финальный рывок</div>
+      <div class="tl-desc">Пробники, разбор ДВ. Пробник — 86 вторичных баллов.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">8 июня</div>
+      <div class="tl-title">Экзамен</div>
+      <div class="tl-desc">Утренний разбор ДВ (87% совпадение). Результат — 64 вторичных.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 3. TOPICS ═══════════ -->
+<section class="block" id="topics">
+  <h2><span class="num">3</span> Диагностика знаний по темам</h2>
+  <p>На пробном занятии в феврале проведена масштабная диагностика по всем темам кодификатора. Стартовый уровень — <strong>2–9%</strong> по большинству тем (пробелы с 7 класса). К июню — <strong>87–98%</strong>. Средний прирост по всем темам: <strong>+87 процентных пунктов</strong>.</p>
+  <img class="chart" src="./charts/sections_radar.png" alt="Радар по разделам" loading="lazy">
+  <img class="chart" src="./charts/top_growth.png" alt="Топ-15 прироста" loading="lazy">
+  <img class="chart" src="./charts/topics_heatmap.png" alt="Тепловая карта тем" loading="lazy">
+</section>
+
+<!-- ═══════════ 4. FIPI ═══════════ -->
+<section class="block" id="fipi">
+  <h2><span class="num">4</span> Открытый банк заданий ФИПИ</h2>
+  <p>По актуальному сборнику (обновление 03.06.2026) открытый банк содержит <strong>1083 задания</strong> и <strong>468 прототипов</strong> по 19 номерам. Банк регулярно пополняется — фиксированного размера нет.</p>
+  <p>За период подготовки банк пройден <strong>3 раза</strong> (полный → тематический → финальный цикл). Итоговый результат: <strong>100% охват</strong> — <strong>ни одно задание не было упущено</strong>. Каждый из 1083 прототипов разобран на занятиях или в домашней работе.</p>
+  <img class="chart" src="./charts/fipi_coverage.png" alt="Охват банка ФИПИ" loading="lazy">
+</section>
+
+<!-- ═══════════ 5. EXAM DAY ═══════════ -->
+<section class="block" id="exam-day">
+  <h2><span class="num">5</span> Экзамен 8 июня: разбор варианта Дальнего Востока</h2>
+  <p>Утром 8 июня полностью разобран вариант Дальнего Востока. Совпадение с центральным вариантом — <strong>87%</strong>. Совпали задания <strong>1–12, 13, 15 и 16</strong>.</p>
+  <p>На финальных пробниках (1-я часть + №13, 15, 16): <strong>20 первичных = 86 вторичных (86%, оценка «5»)</strong>.</p>
+  <img class="chart" src="./charts/final_variant.png" alt="Финальный пробник 86 баллов" loading="lazy">
+</section>
+
+<!-- ═══════════ 6. AUDIT ═══════════ -->
+<section class="block" id="audit">
+  <h2><span class="num">6</span> Экспертный аудит экзаменационных бланков</h2>
+
+  <div class="callout callout-danger">
+    <div class="callout-title">Главный вывод аудита</div>
+    <p style="margin:0">Вячеслав <strong>знал</strong> материал — это подтверждают пробник на 86 баллов и разбор утром 8 июня. На экзамене он допустил ошибки <strong>не из-за незнания</strong>, а из-за <strong>невнимательности</strong>, <strong>страха перед заданиями</strong> и <strong>непереноса решений с черновика</strong>.</p>
+  </div>
+
+  <!-- 6.1 Part 1 table -->
+  <h3>6.1. Бланк №1 — первая часть (задания 1–12)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>№</th><th>Ответ на бланке</th><th>Статус</th><th>Комментарий</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>56</td><td><span class="badge badge-ok">Верно</span></td><td>Планиметрия</td></tr>
+        <tr><td>2</td><td>13</td><td><span class="badge badge-ok">Верно</span></td><td>Векторы</td></tr>
+        <tr><td>3</td><td>72</td><td><span class="badge badge-ok">Верно</span></td><td>Стереометрия</td></tr>
+        <tr><td>4</td><td>0,3</td><td><span class="badge badge-ok">Верно</span></td><td>Вероятность</td></tr>
+        <tr><td>5</td><td>0,18</td><td><span class="badge badge-ok">Верно</span></td><td>Вероятность</td></tr>
+        <tr><td>6</td><td>8</td><td><span class="badge badge-ok">Верно</span></td><td>Уравнения</td></tr>
+        <tr><td>7</td><td>8</td><td><span class="badge badge-ok">Верно</span></td><td>Преобразования</td></tr>
+        <tr><td>8</td><td>5</td><td><span class="badge badge-ok">Верно</span></td><td>Производная и график</td></tr>
+        <tr class="error-row"><td><strong>9</strong></td><td><strong>16</strong></td><td><span class="badge badge-err">Ошибка</span></td><td><strong>Прикладная — см. разбор ниже</strong></td></tr>
+        <tr><td>10</td><td>14</td><td><span class="badge badge-ok">Верно</span></td><td>Текстовая задача</td></tr>
+        <tr><td>11</td><td>−21</td><td><span class="badge badge-ok">Верно</span></td><td>Анализ графика</td></tr>
+        <tr><td>12</td><td>196</td><td><span class="badge badge-ok">Верно</span></td><td>Экстремумы</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Итог 1-й части: <strong>11 из 12</strong> (91,7%). Единственная ошибка — <strong>задание №9</strong>.</p>
+
+  <!-- 6.2 Task 9 -->
+  <div class="audit-card task9">
+    <h3>6.2. Задание №9 — разряд конденсатора (прикладная задача)</h3>
+
+    <div class="formula">
+      <div class="formula-label">Условие</div>
+      <p>После включения телевизора на высоковольтном конденсаторе (ёмкость \(C = 2 \cdot 10^{-6}\) Ф, сопротивление \(R = 5 \cdot 10^{6}\) Ом) появляется напряжение \(U_0 = 16\) кВ. При выключении ТВ происходит разряд. Время \(t\) (с) разряда определяется формулой:</p>
+      $$t = \alpha \cdot R \cdot C \cdot \log_2 \frac{U_0}{U}$$
+      <p>где \(\alpha = 0{,}7\) — постоянная. Определить напряжение \(U\) (кВ) на конденсаторе через \(t = 21\) с.</p>
+    </div>
+
+    <div class="callout callout-info">
+      <div class="callout-title">Важно: задача была прорешана 27 мая с теми же числами</div>
+      <p style="margin:0">За 12 дней до экзамена Вячеслав решил эту задачу на занятии — <strong>с идентичными коэффициентами</strong>. На экзамене записал <strong>16</strong> вместо правильного ответа <strong>2</strong>.</p>
+    </div>
+
+    <h4>Правильное решение</h4>
+    <div class="audit-step">
+      <div class="icon icon-ok">1</div>
+      <div class="step-body">Подставляем данные: \(21 = 0{,}7 \cdot 5 \cdot 10^{6} \cdot 2 \cdot 10^{-6} \cdot \log_2 \dfrac{16}{U}\)</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-ok">2</div>
+      <div class="step-body">Упрощаем: \(10^{6} \cdot 10^{-6} = 1\), а \(0{,}7 \cdot 5 \cdot 2 = 7\). Получаем: \(21 = 7 \cdot \log_2 \dfrac{16}{U}\)</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-ok">3</div>
+      <div class="step-body">Делим на 7: \(\log_2 \dfrac{16}{U} = 3\)</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-ok">4</div>
+      <div class="step-body">По определению логарифма: \(\dfrac{16}{U} = 2^{3} = 8\)</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-ok">5</div>
+      <div class="step-body">Отсюда \(U = \dfrac{16}{8} = \mathbf{2}\) кВ.</div>
+    </div>
+
+    <div class="compare-grid">
+      <div class="compare-box wrong">
+        <div class="label">Ответ на экзамене</div>
+        <div class="answer">16</div>
+        <p style="margin-top:8px;font-size:0.85rem;color:#991B1B">Записано начальное напряжение \(U_0\), а не результат</p>
+      </div>
+      <div class="compare-box right">
+        <div class="label">Правильный ответ</div>
+        <div class="answer">2</div>
+        <p style="margin-top:8px;font-size:0.85rem;color:#065F46">Решено 27.05 с теми же числами</p>
+      </div>
+    </div>
+
+    <h4>Экспертная оценка ошибки</h4>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body"><strong>Невнимательность:</strong> в ответ переписано \(U_0 = 16\) вместо вычисленного \(U = 2\). Задача не решалась на экзамене — сразу записан «знакомый» номер из условия.</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body"><strong>Страх / спешка:</strong> на реальном ЕГЭ Вячеслав «побоялся» задания, хотя утром разбирал аналогичную прикладную задачу. Вместо подстановки в формулу — механическая запись числа из текста.</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-warn">!</div>
+      <div class="step-body"><strong>Вывод:</strong> это не пробел в знаниях (логарифмы, формула — отработаны), а <strong>экзаменационная невнимательность</strong>. Потеряно <strong>1 первичный балл</strong>.</div>
+    </div>
+  </div>
+
+  <!-- 6.3 Task 13 -->
+  <div class="audit-card task13">
+    <h3>6.3. Задание №13 — тригонометрическое уравнение (0 из 2 баллов)</h3>
+    <div class="formula">
+      $$4\cos\left(x + \frac{\pi}{6}\right) + 2\sqrt{3}\cos^2(\pi + x) = 1$$
+    </div>
+
+    <div class="audit-step">
+      <div class="icon icon-ok">+</div>
+      <div class="step-body">Корректно применена формула \(\cos(a+b)\), подставлены \(\cos\frac{\pi}{6} = \frac{\sqrt{3}}{2}\), \(\sin\frac{\pi}{6} = \frac{1}{2}\).</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body"><strong>Критическая ошибка переписывания:</strong> \(+2\sqrt{3}\cos^2(\pi+x)\) записано как \(-2\sqrt{3}\cos x\). Потеряны: квадрат, знак, корректная замена \(\cos(\pi+x)\).</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-warn">~</div>
+      <div class="step-body">После правильного раскрытия первого слагаемого фактически получается: \(2\sqrt{3}\cos x - 2\sin x - 2\sqrt{3}\cos x - 1 = 0 \Rightarrow -2\sin x - 1 = 0 \Rightarrow \sin x = -\frac{1}{2}\).</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body">Сокращение \(2\sqrt{3}\cos x\) <strong>не замечено</strong>. Ученик ушёл в неверные преобразования с \(\tan x\).</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body">Ответ (а): \(x = \frac{3\pi}{2} + 2\pi k\) — <strong>неверен</strong>. Ответ (б): \(\frac{15\pi}{2} = 7{,}5\pi\) — <strong>вне</strong> интервала \(\left[\frac{9\pi}{2};\, 6\pi\right]\).</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-warn">!</div>
+      <div class="step-body"><strong>Вывод:</strong> тема разобрана утром 8 июня. Ошибка — вычислительно-техническая при переписывании, усиленная стрессом. Потеряно <strong>2 первичных балла</strong>.</div>
+    </div>
+    <img class="chart" src="./charts/task13_audit.png" alt="Цепочка ошибок в задании 13" loading="lazy">
+  </div>
+
+  <!-- 6.4 Task 15 -->
+  <div class="audit-card task15">
+    <h3>6.4. Задание №15 — неравенство (0 из 2 баллов)</h3>
+    <p>Задание <strong>не вынесено на бланк</strong>, хотя утром 8 июня было полностью разобрано.</p>
+    <div class="audit-step">
+      <div class="icon icon-info">i</div>
+      <div class="step-body">Решение занимает <strong>2 действия</strong> по <strong>самому простому свойству логарифма</strong> — тема многократно отрабатывалась на занятиях и пробниках.</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body"><strong>«Испугался» задания</strong> на реальном экзамене — оставил чистый бланк, хотя алгоритм знал. Потеряно <strong>2 первичных балла</strong>.</div>
+    </div>
+  </div>
+
+  <!-- 6.5 Task 16 -->
+  <div class="audit-card task16">
+    <h3>6.5. Задание №16 — экономическая задача (потерян 1 балл)</h3>
+    <p>Как выяснилось <strong>после проверки</strong>, Вячеслав <strong>не переписал таблицу с черновика на чистовой бланк</strong>. При этом <strong>до проверки утверждал, что написал решение</strong>.</p>
+
+    <div class="audit-step">
+      <div class="icon icon-ok">+</div>
+      <div class="step-body">На черновике решение было — задача решается в <strong>~2 строки</strong> (стандартная схема: таблица → уравнение → ответ).</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body"><strong>Таблица не перенесена</strong> на бланк №2. Без таблицы эксперт не может поставить полный балл — <strong>потерян 1 первичный балл</strong> из 2.</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-err">−</div>
+      <div class="step-body"><strong>Недостоверная информация:</strong> до получения результатов Вячеслав сообщал, что задание написано. Фактически — не переписано с черновика.</div>
+    </div>
+    <div class="audit-step">
+      <div class="icon icon-warn">!</div>
+      <div class="step-body"><strong>Вывод:</strong> знание есть (разобрано утром, решалось на пробниках), но <strong>невнимательность при переносе</strong> и <strong>поспешность</strong> стоили балла.</div>
+    </div>
+  </div>
+
+  <h3>Структура потерянных баллов</h3>
+  <img class="chart chart-half" src="./charts/exam_breakdown.png" alt="Структура результата на экзамене" loading="lazy">
+
+  <div class="table-wrap">
+    <table style="min-width:400px">
+      <thead>
+        <tr><th>Задание</th><th>Макс.</th><th>Набрано</th><th>Потеряно</th><th>Причина</th></tr>
+      </thead>
+      <tbody>
+        <tr class="error-row"><td>№9</td><td>1</td><td>0</td><td>1</td><td>Записал \(U_0=16\) вместо \(U=2\)</td></tr>
+        <tr class="error-row"><td>№13</td><td>2</td><td>0</td><td>2</td><td>Ошибка переписывания уравнения</td></tr>
+        <tr class="error-row"><td>№15</td><td>2</td><td>0</td><td>2</td><td>Не вынес (страх, 2 действия)</td></tr>
+        <tr class="error-row"><td>№16</td><td>2</td><td>0</td><td>1*</td><td>Таблица не переписана с черновика</td></tr>
+        <tr class="highlight"><td><strong>Итого упущено</strong></td><td></td><td></td><td><strong>6</strong></td><td>Потенциал: 17 перв. = 80 втор.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-muted)">* По №16: решение на черновике было, но таблица не перенесена — упущен 1 балл из 2 возможных.</p>
+</section>
+
+<!-- ═══════════ 7. BEHAVIOR ═══════════ -->
+<section class="block" id="behavior">
+  <h2><span class="num">7</span> Экзаменационное поведение: невнимательность и страх</h2>
+
+  <div class="cards-grid">
+    <div class="feature-card" style="border-left:4px solid var(--danger)">
+      <h4>Невнимательность</h4>
+      <p>№9: записал число из условия (\(U_0=16\)) вместо ответа. №16: не переписал таблицу с черновика. №13: ошибка при переписывании формулы.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--warn)">
+      <h4>Страх на экзамене</h4>
+      <p>№15 и №16 — не вынесены на бланк, хотя решались на занятии и разбирались утром. Типичная реакция: «знаю, но боюсь начать».</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--primary)">
+      <h4>Знание vs результат</h4>
+      <p>Пробник: 86 баллов (оценка «5»). Экзамен: 64 (оценка «4»). Разрыв — не в знаниях, а в экзаменационной дисциплине.</p>
+    </div>
+  </div>
+
+  <div class="callout callout-success">
+    <div class="callout-title">Что это доказывает</div>
+    <p style="margin:0">Подготовка дала <strong>реальный, измеримый результат</strong>: средний прирост <strong>+87 п.п.</strong> по темам, <strong>100% банка ФИПИ</strong> пройдено без пропусков, финальный пробник — <strong>86 баллов</strong> (оценка «5»), на экзамене — <strong>11/12 в первой части</strong>. Разрыв между пробником (86) и экзаменом (64) — следствие <strong>невнимательности и страха на экзамене</strong>, а не недостатка подготовки.</p>
+  </div>
+</section>
+
+<!-- ═══════════ 8. SUMMARY ═══════════ -->
+<section class="block" id="summary">
+  <h2><span class="num">8</span> Итоги и выводы</h2>
+
+  <div class="callout callout-success">
+    <ul style="padding-left:1.25rem;margin:0">
+      <li><strong>Старт (февраль):</strong> крайне низкий уровень — 11–17% по темам, пробелы с 7 класса</li>
+      <li><strong>Февраль–март:</strong> ликвидация базовых пробелов прошлых лет (не ЕГЭ-формат)</li>
+      <li><strong>Апрель–июнь:</strong> реальная подготовка к ЕГЭ — рост до 86% на пробнике</li>
+      <li><strong>Финальный пробник:</strong> 86 вторичных (86%), оценка «5»</li>
+      <li><strong>Экзамен 08.06:</strong> 64 вторичных (64%), оценка «4» — <strong>сдан</strong></li>
+      <li><strong>Прирост по темам:</strong> +87 п.п. в среднем, 100% банка ФИПИ (1083 задания)</li>
+      <li><strong>1-я часть на экзамене:</strong> 11/12 (91,7%) — единственная ошибка в №9</li>
+      <li><strong>Потенциал на экзамене:</strong> 17 перв. = 80 втор. (оценка «5») — подтверждён пробником</li>
+    </ul>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Показатель</th><th>Первичные</th><th>Вторичные</th><th>%</th><th>Оценка</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Диагностика (мин.)</td><td>2</td><td>11</td><td>11%</td><td>2</td></tr>
+        <tr><td>Диагностика (макс.)</td><td>4</td><td>22</td><td>22%</td><td>2</td></tr>
+        <tr><td>Финальный пробник</td><td>20</td><td>86</td><td>86%</td><td>5</td></tr>
+        <tr class="highlight"><td>Экзамен 08.06</td><td>11</td><td>64</td><td>64%</td><td>4</td></tr>
+        <tr><td>Потенциал (пробник)</td><td>17</td><td>80</td><td>80%</td><td>5</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Обобщающий вывод</h3>
+  <p>Когда ко мне пришёл Вячеслав, его уровень математики был <strong>критически низким</strong> — многие темы с 7–8 класса не были усвоены. За формальные 5 месяцев работы мы прошли путь от «не знает базовую алгебру» до «решает полный вариант ЕГЭ на 86 баллов». Это объективно <strong>ошеломляющий результат</strong>, особенно с учётом того, что непосредственно к формату ЕГЭ готовились фактически <strong>2 месяца</strong>.</p>
+
+  <p>На занятиях был пройден <strong>весь открытый банк ФИПИ</strong> — 1083 задания, три полных цикла, без единого пропуска. Средний прирост знаний по темам составил <strong>+87 процентных пунктов</strong>. Для мотивации к теории я разработал метод карточек и персональный сайт. Когда стало ясно, что без дополнительных занятий не обойтись, я предложил Светлане <strong>+10 часов</strong>; после совета со Славой добавили лишь <strong>5 часов</strong>, и только с <strong>начала мая</strong> — менее чем за месяц до экзамена.</p>
+
+  <p>Результат на экзамене — <strong>64 балла, оценка «4»</strong> — ниже пробника (86), но это объясняется исключительно <strong>поведением на экзамене</strong>: невнимательность (записал 16 вместо 2 в задании, которое решал 12 дней назад), страх (не вынес задания 15 и 16, разобранные утром), небрежность (не переписал таблицу с черновика). Все эти ошибки — <strong>не про незнание</strong>, а про экзаменационную дисциплину.</p>
+
+  <p>Факт остаётся фактом: ученик, который в феврале едва решал линейные уравнения, в июне стабильно набирал <strong>86 баллов на пробниках</strong> и сдал ЕГЭ на <strong>64 балла с оценкой «4»</strong>. Это результат интенсивной, системной работы — и он говорит сам за себя.</p>
+
+  <div class="callout callout-info">
+    <div class="callout-title">Ключевые цифры одной строкой</div>
+    <p style="margin:0"><strong>+87 п.п.</strong> прирост знаний &nbsp;·&nbsp; <strong>100%</strong> банка ФИПИ &nbsp;·&nbsp; <strong>86</strong> баллов на пробнике &nbsp;·&nbsp; <strong>64</strong> на экзамене &nbsp;·&nbsp; <strong>11/12</strong> в первой части &nbsp;·&nbsp; <strong>+5 ч.</strong> с ~10 мая (предложено +10)</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  Аудит подготовки к ЕГЭ-2026 · Вячеслав · Профильная математика · Февраль — Июнь 2026
+</footer>
+
+<script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
