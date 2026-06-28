@@ -2,8 +2,8 @@
 
 Отчёт о подготовке ученика: диагностика, динамика баллов, банк ФИПИ, аудит бланков.
 
-- **Локальный путь:** `C:\Users\82399\Documents\Vyacheslav_EGE_Audit`
-- **Публичный сайт:** после деплоя — `https://d8239993.github.io/vyacheslav-ege-audit/`
+- **Репозиторий:** [d8239993/vyacheslav-ege-audit](https://github.com/d8239993/vyacheslav-ege-audit)
+- **Публичный сайт:** [https://d8239993.github.io/vyacheslav-ege-audit/](https://d8239993.github.io/vyacheslav-ege-audit/)
 
 ## Структура
 
