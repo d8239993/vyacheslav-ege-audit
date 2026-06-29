@@ -17,7 +17,7 @@ SKIP_NAMES = {
 }
 ROOT_FILES = ("index.html", "report.html")
 COPY_DIRS = ("css", "charts", "js")
-COPY_SUBDIRS = ("physics",)  # physics/index.html + physics/css/
+COPY_SUBDIRS = ("physics", "informatics")  # subsites: index.html + css/
 
 
 def copy_tree(src: Path, dst: Path) -> None:
