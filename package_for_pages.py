@@ -16,7 +16,14 @@ SKIP_NAMES = {
     ".github",
 }
 ROOT_FILES = ("index.html", "report.html")
-COPY_DIRS = ("css", "charts")
+COPY_DIRS = ("css", "charts", "js")
+COPY_SUBDIRS = ("physics",)  # physics/index.html + physics/css/
+
+
+def copy_tree(src: Path, dst: Path) -> None:
+    if dst.exists():
+        shutil.rmtree(dst)
+    shutil.copytree(src, dst)
 
 
 def main() -> None:
@@ -36,7 +43,14 @@ def main() -> None:
         if not src.is_dir():
             print(f"Нет каталога: {src}", file=sys.stderr)
             sys.exit(1)
-        shutil.copytree(src, SITE / name)
+        copy_tree(src, SITE / name)
+
+    for name in COPY_SUBDIRS:
+        src = ROOT / name
+        if not src.is_dir():
+            print(f"Нет каталога: {src}", file=sys.stderr)
+            sys.exit(1)
+        copy_tree(src, SITE / name)
 
     (SITE / ".nojekyll").touch()
     print(f"OK: собрано в {SITE}", file=sys.stderr)
