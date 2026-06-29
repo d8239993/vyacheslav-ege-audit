@@ -47,10 +47,8 @@ def main() -> None:
 
     for name in COPY_SUBDIRS:
         src = ROOT / name
-        if not src.is_dir():
-            print(f"Нет каталога: {src}", file=sys.stderr)
-            sys.exit(1)
-        copy_tree(src, SITE / name)
+        if src.is_dir():
+            copy_tree(src, SITE / name)
 
     (SITE / ".nojekyll").touch()
     print(f"OK: собрано в {SITE}", file=sys.stderr)
