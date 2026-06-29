@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Аудит подготовки Вячеслава к ЕГЭ-2026 по физике">
+<title>Аудит подготовки — Вячеслав — ЕГЭ-2026 — Физика</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="./css/physics.css">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(','\\)'], ['$', '$']] },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="physics-theme">
+
+<div class="report-switch">
+  Отчёт по <strong>физике</strong> &nbsp;·&nbsp;
+  <a href="../index.html">перейти к отчёту по профильной математике</a>
+</div>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Физика · ЕГЭ 2026</div>
+    <h1>Полный аудит подготовки к&nbsp;ЕГЭ по&nbsp;физике</h1>
+    <div class="student-name">Вячеслав</div>
+    <div class="meta">Февраль — Июнь 2026 &nbsp;·&nbsp; Экзамен: <strong>11 июня</strong> &nbsp;·&nbsp; К формату ЕГЭ: ~2,5 мес.</div>
+  </div>
+</header>
+
+<div class="kpi-strip">
+  <div class="kpi"><div class="val">53</div><div class="lbl">Экзамен (вторичные)</div></div>
+  <div class="kpi"><div class="val">80+</div><div class="lbl">Ожидание по пробникам</div></div>
+  <div class="kpi"><div class="val">92%</div><div class="lbl">Авторский прогноз · 1-я часть</div></div>
+  <div class="kpi"><div class="val">2×</div><div class="lbl">Банк ФИПИ + Демидова</div></div>
+  <div class="kpi"><div class="val">2,5 мес.</div><div class="lbl">Подготовка к формату ЕГЭ</div></div>
+  <div class="kpi"><div class="val">≈2 ч</div><div class="lbl">Время на экзамене из 4</div></div>
+</div>
+
+<nav class="nav-wrap">
+  <div class="nav">
+    <a href="#start">Старт</a>
+    <a href="#gaps">7–10 класс</a>
+    <a href="#path">Путь</a>
+    <a href="#topics">Разделы</a>
+    <a href="#controls">Контроли</a>
+    <a href="#fipi">ФИПИ и Демидова</a>
+    <a href="#mocks">Пробники</a>
+    <a href="#exam">Экзамен</a>
+    <a href="#behavior">Поведение</a>
+    <a href="#summary">Итоги</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- 0. EGE STRUCTURE -->
+<section class="block" id="scale">
+  <h2><span class="num">0</span> ЕГЭ-2026 по физике: структура и баллы</h2>
+  <p>Экзамен состоит из <strong>26 заданий</strong> и <strong>45 первичных баллов</strong> (максимум — <strong>100 вторичных</strong>). Первая часть (задания 1–20) даёт <strong>28 первичных баллов</strong> — это <strong>62,2%</strong> от максимума работы. Вторая часть (21–26) — <strong>17 первичных</strong> (37,8%).</p>
+  <p><strong>Важно про 1-ю часть:</strong> вторичный балл считается по <em>сумме всей работы</em>, но при нуле во 2-й части «потолок» только за 1-ю часть — <strong>28 первичных = 70 вторичных</strong> (оценка «5»). Именно поэтому на пробниках результат 1-й части выражали как <strong>68–70 из 70 вторичных</strong> — это эквивалент <strong>27–28 первичных</strong> из 28 возможных за задания 1–20, причём <strong>28/70 (идеальная часть) — регулярно</strong>.</p>
+
+  <div class="chart-row">
+    <img class="chart" src="../charts/physics/ege_structure.png" alt="Структура ЕГЭ по физике 2026" loading="lazy">
+  </div>
+
+  <div class="tables-grid">
+    <div class="table-wrap">
+      <table style="min-width:280px">
+        <thead><tr><th>Перв. (вся работа)</th><th>Втор.</th><th>%</th><th>Оценка</th></tr></thead>
+        <tbody>
+          <tr><td>8</td><td>36</td><td>36%</td><td>3</td></tr>
+          <tr><td>10</td><td>40</td><td>40%</td><td>4</td></tr>
+          <tr class="highlight"><td>17</td><td>53</td><td>53%</td><td><strong>4</strong></td></tr>
+          <tr><td>28</td><td>70</td><td>70%</td><td>5</td></tr>
+          <tr><td>33</td><td>77</td><td>77%</td><td>5</td></tr>
+          <tr><td>45</td><td>100</td><td>100%</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap">
+      <table style="min-width:300px">
+        <thead><tr><th colspan="3">1-я часть (зад. 1–20): макс. 28 перв. → до 70 втор.</th></tr>
+        <tr><th>Перв. за ч.1</th><th>Втор. (если 2-я = 0)</th><th>Комментарий</th></tr></thead>
+        <tbody>
+          <tr><td>20</td><td>58</td><td>~71% заданий части 1</td></tr>
+          <tr><td>24</td><td>64</td><td>−4 перв. от максимума</td></tr>
+          <tr><td>27</td><td>68</td><td>нижняя граница пробников Славы</td></tr>
+          <tr class="highlight"><td>28</td><td>70</td><td><strong>типичный результат — регулярно</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3>Разбаловка 1-й части по номерам (2026)</h3>
+  <div class="table-wrap">
+    <table style="min-width:520px">
+      <thead>
+        <tr><th>Задания</th><th>Перв. баллы</th><th>Задания</th><th>Перв. баллы</th><th>Итого ч.1</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>№1–4</td><td>4 × 1 = 4</td><td>№11–13</td><td>3 × 1 = 3</td><td rowspan="3" style="vertical-align:middle;font-weight:700;font-size:1.1rem">28 перв.<br>→ 70 втор.</td></tr>
+        <tr><td>№5–6, 9–10</td><td>4 × 2 = 8</td><td>№14–15, 17–18</td><td>4 × 2 = 8</td></tr>
+        <tr><td>№7–8</td><td>2 × 1 = 2</td><td>№16, 19–20</td><td>3 × 1 = 3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tables-grid">
+    <div class="table-wrap">
+      <table style="min-width:240px">
+        <thead><tr><th>Задание</th><th>Баллы</th><th>Раздел</th></tr></thead>
+        <tbody>
+          <tr><td>№1–4</td><td>по 1</td><td>Механика (краткий ответ)</td></tr>
+          <tr><td>№5–6, 9–10, 14–15, 17–18</td><td>по 2</td><td>Мех., молек., электро.</td></tr>
+          <tr><td>№21</td><td>3</td><td>Качеств. задача (молек./электро.)</td></tr>
+          <tr><td>№22–23</td><td>по 2</td><td>Расчётные задачи</td></tr>
+          <tr><td>№24–25</td><td>по 3</td><td>Расчётные (оптика в №25)</td></tr>
+          <tr><td>№26</td><td>4</td><td>Расчёт с обоснованием</td></tr>
+          <tr class="highlight"><td>Итого</td><td>45</td><td>4 раздела физики</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 1. START -->
+<section class="block" id="start">
+  <h2><span class="num">1</span> Входной контроль: почти нулевой старт</h2>
+
+  <div class="callout callout-danger">
+    <div class="callout-title">Ключевой вывод диагностики</div>
+    <p style="margin:0">Когда мы начали заниматься, Слава выполнил <strong>тест входного контроля</strong> — по сути, полноценный вариант ЕГЭ. Относительно уверенно решены только задания по <strong>кинематике</strong> (первые 3–4 номера первой части). Дальше — лишь <strong>предположения и догадки</strong>. О <strong>второй части</strong> говорить не приходилось вовсе. Чтобы приступать к ЕГЭ, необходимо было <strong>ликвидировать пробелы с 7 по 10 класс</strong> по физике.</p>
+  </div>
+
+  <div class="chart-row">
+    <img class="chart" src="../charts/physics/diagnostic_start.png" alt="Структура знаний на входе" loading="lazy">
+  </div>
+
+  <div class="donut-grid">
+    <div class="donut-card">
+      <h4>Что умел на старте</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="14"
+          stroke-dasharray="45 206" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <text x="50" y="48" text-anchor="middle" font-size="14" font-weight="700" fill="#0F766E">~18%</text>
+        <text x="50" y="60" text-anchor="middle" font-size="6" fill="#64748B">кинематика</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#10B981"></i> Кинематика — уверенно</span>
+        <span><i style="background:#E2E8F0"></i> Остальное — нет</span>
+      </div>
+    </div>
+    <div class="donut-card">
+      <h4>1-я часть на входе</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#F97316" stroke-width="14"
+          stroke-dasharray="30 221" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#EF4444" stroke-width="14"
+          stroke-dasharray="221 30" stroke-dashoffset="32" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="#0F766E">3–4 / 20</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#10B981"></i> Кинематика</span>
+        <span><i style="background:#F97316"></i> Догадки</span>
+        <span><i style="background:#EF4444"></i> Не решал</span>
+      </div>
+    </div>
+    <div class="donut-card">
+      <h4>2-я часть на входе</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#EF4444" stroke-width="14"/>
+        <text x="50" y="48" text-anchor="middle" font-size="14" font-weight="700" fill="#991B1B">0%</text>
+        <text x="50" y="60" text-anchor="middle" font-size="6" fill="#64748B">не обсуждалась</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#EF4444"></i> Задания 21–26 — вне зоны</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Типичные пробелы 7–10 классов, которые блокировали ЕГЭ</h3>
+  <ul>
+    <li><strong>7 класс:</strong> физические величины, единицы СИ, скорость и путь, первые представления о силе;</li>
+    <li><strong>8 класс:</strong> давление, Архимед, тепловые явления, закон Ома (базовый уровень);</li>
+    <li><strong>9 класс:</strong> законы Ньютона (формально «проходили», но не применяли), работа и энергия, электрический ток;</li>
+    <li><strong>10 класс:</strong> молекулярная физика, термодинамика, электродинамика — практически не усвоены.</li>
+  </ul>
+  <p>Без восстановления этой базы решение прототипов ФИПИ было невозможно — поэтому подготовку начали <strong>с первых разделов курса</strong>, а не с «натренировки номеров».</p>
+</section>
+
+<!-- 2. GAPS -->
+<section class="block" id="gaps">
+  <h2><span class="num">2</span> Ликвидация пробелов 7–10 классов</h2>
+  <p>Изначально знаний было <strong>критически мало</strong>. Школьная программа прошлых лет не давала опоры для ЕГЭ: формулы не применялись, разделы не связывались друг с другом. Первый этап — не формат экзамена, а <strong>восстановление фундамента</strong> по темам, без которых большинство заданий КИМ просто не решаются.</p>
+
+  <img class="chart" src="../charts/physics/gaps_7_10.png" alt="Пробелы 7-10 класс до и после" loading="lazy">
+
+  <div class="cards-grid">
+    <div class="feature-card" style="border-left:4px solid var(--danger)">
+      <h4>До подготовки</h4>
+      <p>Единственный уверенный блок — <strong>кинематика</strong>. Динамика, статика, электричество, оптика — <strong>5–15%</strong> по субъективной оценке на диагностике.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--success)">
+      <h4>После прохождения программы</h4>
+      <p>Все разделы доведены до <strong>90–95%</strong> на повторных тематических контролях. База 7–10 классов встроена в контекст заданий ЕГЭ.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PATH -->
+<section class="block" id="path">
+  <h2><span class="num">3</span> Путь подготовки: от нуля до пробников на 80+</h2>
+
+  <div class="callout callout-info">
+    <div class="callout-title">Важно понимать структуру подготовки</div>
+    <p style="margin:0">Формально занятия шли с февраля по июнь, но <strong>непосредственная подготовка к прототипам и формату ЕГЭ</strong> заняла <strong>примерно 2,5 месяца</strong>. Предшествующий период ушёл на <strong>ликвидацию пробелов 7–10 классов</strong> и первичное прохождение 14 разделов — без этого к банку ФИПИ и полным вариантам перейти было нельзя.</p>
+  </div>
+
+  <div class="cards-grid">
+    <div class="feature-card" style="border-left:4px solid var(--warn)">
+      <h4>Фаза 1 — база</h4>
+      <p><strong>Пробелы 7–10 кл.</strong> + 14 разделов с нуля. Тематические контроли ~65–72%. К формату ЕГЭ ещё не переходили.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--success)">
+      <h4>Фаза 2 — ~2,5 месяца</h4>
+      <p><strong>Реальная подготовка к ЕГЭ:</strong> повторение, полные варианты, 2× ФИПИ, 2× Демидова. 1-я часть 68–70/70 втор., прогноз 80+.</p>
+    </div>
+  </div>
+
+  <div class="callout callout-info">
+    <div class="callout-title">Логика работы</div>
+    <p style="margin:0">Сначала — <strong>последовательное изучение всех разделов</strong> с тематическим контролем после каждого. Затем — <strong>второй проход</strong> всех разделов. Только после этого — полные варианты ЕГЭ, банк ФИПИ и методические материалы Демидовой (два полных цикла).</p>
+  </div>
+
+  <h3>Изученные разделы (в порядке прохождения)</h3>
+  <div class="table-wrap">
+    <table class="match-table">
+      <thead>
+        <tr><th>№</th><th>Раздел</th><th>Фаза</th><th>Контроль 1</th><th>Контроль 2</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Кинематика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~65%</td><td>~88%</td></tr>
+        <tr><td>2</td><td>Динамика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~62%</td><td>~92%</td></tr>
+        <tr><td>3</td><td>Статика и условия равновесия тел</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~60%</td><td>~86%</td></tr>
+        <tr><td>4</td><td>Законы сохранения в механике</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~63%</td><td>~89%</td></tr>
+        <tr><td>5</td><td>Механические колебания и волны</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~61%</td><td>~85%</td></tr>
+        <tr><td>6</td><td>Молекулярная физика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~64%</td><td>~88%</td></tr>
+        <tr><td>7</td><td>Термодинамика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~60%</td><td>~86%</td></tr>
+        <tr><td>8</td><td>Электродинамика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~62%</td><td>~92%</td></tr>
+        <tr><td>9</td><td>Законы постоянного тока</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~65%</td><td>~90%</td></tr>
+        <tr><td>10</td><td>Электромагнитное и магнитное поле</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~61%</td><td>~86%</td></tr>
+        <tr><td>11</td><td>Электромагнитные колебания и волны</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~60%</td><td>~85%</td></tr>
+        <tr><td>12</td><td>Электромагнитная индукция</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~63%</td><td>~88%</td></tr>
+        <tr><td>13</td><td>Оптика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~62%</td><td>~84%</td></tr>
+        <tr><td>14</td><td>Квантовая физика</td><td><span class="phase-badge phase-study">Изучение</span></td><td>~60%</td><td>~82%</td></tr>
+        <tr class="highlight"><td></td><td><strong>Повторение всех разделов</strong></td><td><span class="phase-badge phase-repeat">2-й проход</span></td><td colspan="2"><strong>90–95% на контролях</strong></td></tr>
+        <tr class="highlight"><td></td><td><strong>Полные варианты + ФИПИ + Демидова</strong></td><td><span class="phase-badge phase-exam">ЕГЭ-формат</span></td><td colspan="2"><strong>1-я часть 68–70/70; №21–23 стабильно</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <img class="chart" src="../charts/physics/sections_studied.png" alt="14 пройденных разделов" loading="lazy">
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">Этап 1</div>
+      <div class="tl-title">Входной контроль = вариант ЕГЭ</div>
+      <div class="tl-desc">Кинематика — да; остальное — догадки; 2-я часть — 0.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Этап 2</div>
+      <div class="tl-title">14 разделов с нуля</div>
+      <div class="tl-desc">После каждого — тематический контроль (~65–72%).</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Этап 3</div>
+      <div class="tl-title">Повторение всех разделов</div>
+      <div class="tl-desc">Контроли выросли до 90–95%.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Этап 4</div>
+      <div class="tl-title">Полные варианты ЕГЭ</div>
+      <div class="tl-desc">1-я часть: 68–70 из 70 втор.; регулярно 70. №21–23 стабильно, иногда №24.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Этап 5</div>
+      <div class="tl-title">2× банк ФИПИ + 2× Демидова</div>
+      <div class="tl-desc">Полные проходы методических материалов разработчика КИМ.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">~2,5 месяца</div>
+      <div class="tl-title">Подготовка к формату ЕГЭ</div>
+      <div class="tl-desc">Повторение, варианты, 2× ФИПИ + Демидова. Не считая базы и первого прохода разделов.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Перед экзаменом</div>
+      <div class="tl-title">Авторский прогноз — 92%</div>
+      <div class="tl-desc">1-я часть прогноза затем совпала с экзаменом полностью.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">11 июня</div>
+      <div class="tl-title">Экзамен · разбор ДВ утром</div>
+      <div class="tl-desc">1-я часть ДВ — без затруднений. На бланке — 53 втор. (17 перв.), ~2 ч работы.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. TOPICS -->
+<section class="block" id="topics">
+  <h2><span class="num">4</span> Сопоставление с структурой КИМ и книгой Демидовой</h2>
+  <p>Марина Юрьевна <strong>Демидова</strong> — ведущий разработчик КИМ ЕГЭ по физике. Её <strong>методические материалы 2026</strong> и сборники типовых вариантов выстроены по блокам части 1: <strong>механика (зад. 1–6)</strong>, <strong>молекулярная физика (7–10)</strong>, <strong>электродинамика (11–15)</strong>, <strong>квантовая физика (16–17)</strong>, плюс интегрированное задание №18 и методологические №19–20. Часть 2: №21 (качественная, молек./электро.), №22–23 (расчёт), №24–25 (расчёт, №25 — оптика), №26 (расчёт с обоснованием).</p>
+
+  <div class="table-wrap">
+    <table class="match-table">
+      <thead>
+        <tr><th>Блок Демидовой / КИМ</th><th>Задания ЕГЭ</th><th>Что проходили</th><th>Совпадение</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Механика: кинематика, динамика, статика, сохранение, колебания</td><td>№1–6</td><td>Разделы 1–5 программы</td><td class="ok">✓ Полное</td></tr>
+        <tr><td>Молекулярная физика и термодинамика</td><td>№7–10</td><td>Разделы 6–7</td><td class="ok">✓ Полное</td></tr>
+        <tr><td>Электродинамика: ток, поле, индукция, ЭМ волны</td><td>№11–15</td><td>Разделы 8–12</td><td class="ok">✓ Полное</td></tr>
+        <tr><td>Квантовая физика + оптика</td><td>№16–17, №25</td><td>Разделы 13–14</td><td class="ok">✓ Полное</td></tr>
+        <tr><td>Качественные и расчётные задачи (2-я часть)</td><td>№21–26</td><td>№21–23 стабильно; №23 — частично</td><td class="ok">✓ Частичное*</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-muted)">* №25–26 на пробниках не отрабатывались системно — основной упор был на устойчивый минимум 80+ баллов через 1-ю часть и №21–23 (иногда №24).</p>
+
+  <div class="chart-row">
+    <img class="chart" src="../charts/physics/fipi_demidova.png" alt="ФИПИ и Демидова — два прохода" loading="lazy">
+  </div>
+</section>
+
+<!-- 5. CONTROLS -->
+<section class="block" id="controls">
+  <h2><span class="num">5</span> Тематические контроли: динамика усвоения</h2>
+  <p>После <strong>каждого раздела</strong> выполнялся тематический контроль. На первом проходе средний результат — <strong>65–72%</strong>. Это нормально: материал только что изучен, ошибки типичны. После <strong>повторения всех разделов</strong> результаты контролей выросли до <strong>90–95%</strong> — устойчивый уровень перед полными вариантами.</p>
+
+  <img class="chart" src="../charts/physics/thematic_controls.png" alt="Тематические контроли 1-й и 2-й проход" loading="lazy">
+
+  <div class="donut-grid">
+    <div class="donut-card">
+      <h4>1-й проход (среднее)</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#F97316" stroke-width="14"
+          stroke-dasharray="157 94" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="13" font-weight="700" fill="#92400E">68%</text>
+      </svg>
+    </div>
+    <div class="donut-card">
+      <h4>2-й проход (среднее)</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="14"
+          stroke-dasharray="219 32" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="13" font-weight="700" fill="#065F46">93%</text>
+      </svg>
+    </div>
+    <div class="donut-card">
+      <h4>Прирост за повторение</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="14"
+          stroke-dasharray="163 88" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#0891B2" stroke-width="14"
+          stroke-dasharray="88 163" stroke-dashoffset="-101" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="12" font-weight="700" fill="#0F766E">+25 п.п.</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#10B981"></i> 1-й → 2-й проход</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FIPI -->
+<section class="block" id="fipi">
+  <h2><span class="num">6</span> Открытый банк ФИПИ и методические материалы Демидовой</h2>
+  <p>За период подготовки <strong>дважды полностью прорешивали</strong> открытый банк заданий ФИПИ и <strong>дважды проходили</strong> методические материалы Марины Юрьевны Демидовой — разработчика КИМ ЕГЭ по физике. Структура её пособия (механика → молекулярная → электродинамика → квантовая → 2-я часть) <strong>полностью совпала</strong> с нашей программой прохождения разделов.</p>
+
+  <div class="cards-grid">
+    <div class="feature-card" style="border-left:4px solid var(--primary)">
+      <h4>1-й полный проход</h4>
+      <p>Банк ФИПИ + разбор типовых линий по Демидовой. Закрепление прототипов после изучения всех 14 разделов.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--secondary)">
+      <h4>2-й полный проход</h4>
+      <p>Повторный цикл перед экзаменом: полные варианты, акцент на слабые линии, отработка №19–20 (приборы и эксперимент).</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--success)">
+      <h4>Методические материалы 2026</h4>
+      <p>Официальные рекомендации ФИПИ (автор-составитель Демидова): линии 1–6 механика, 7–10 МКТ, 11–15 электродинамика, критерии №21–26.</p>
+    </div>
+  </div>
+
+  <div class="donut-grid">
+    <div class="donut-card">
+      <h4>Охват банка ФИПИ</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#0D9488" stroke-width="14"
+          stroke-dasharray="125 126" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#0891B2" stroke-width="14"
+          stroke-dasharray="126 125" stroke-dashoffset="-63" transform="rotate(-90 50 50)"/>
+        <text x="50" y="48" text-anchor="middle" font-size="14" font-weight="700" fill="#0F766E">2×</text>
+        <text x="50" y="60" text-anchor="middle" font-size="6" fill="#64748B">полный цикл</text>
+      </svg>
+    </div>
+    <div class="donut-card">
+      <h4>Линии части 1 (по Демидовой)</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#3B82F6" stroke-width="10"
+          stroke-dasharray="63 188" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#F59E0B" stroke-width="10"
+          stroke-dasharray="42 209" stroke-dashoffset="-1" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#7C3AED" stroke-width="10"
+          stroke-dasharray="52 199" stroke-dashoffset="-43" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="10"
+          stroke-dasharray="21 230" stroke-dashoffset="-95" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="10" font-weight="700" fill="#0F766E">20 зад.</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#3B82F6"></i> Мех. 6</span>
+        <span><i style="background:#F59E0B"></i> Молек. 4</span>
+        <span><i style="background:#7C3AED"></i> Электро 5</span>
+        <span><i style="background:#10B981"></i> Квант. 2+3</span>
+      </div>
+    </div>
+    <div class="donut-card">
+      <h4>2-я часть (типы по Демидовой)</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="8"
+          stroke-dasharray="35 216" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#0D9488" stroke-width="8"
+          stroke-dasharray="47 204" stroke-dashoffset="-27" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#F97316" stroke-width="8"
+          stroke-dasharray="35 216" stroke-dashoffset="-74" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#EF4444" stroke-width="8"
+          stroke-dasharray="47 204" stroke-dashoffset="-109" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#94A3B8" stroke-width="8"
+          stroke-dasharray="63 188" stroke-dashoffset="-156" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="9" font-weight="700" fill="#0F766E">21–26</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#10B981"></i> №21 ✓</span>
+        <span><i style="background:#0D9488"></i> №22 ✓</span>
+        <span><i style="background:#F97316"></i> №23 ~</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. MOCKS -->
+<section class="block" id="mocks">
+  <h2><span class="num">7</span> Полные варианты и пробники перед экзаменом</h2>
+  <p>Когда все темы были изучены и повторены, перешли к <strong>полным вариантам ЕГЭ</strong> (этап ~2,5 месяцев). Результаты стабильно подтверждали готовность на <strong>80+ вторичных баллов</strong>. За 1-ю часть (максимум <strong>28 первичных = 70 вторичных</strong>) Слава стабильно набирал <strong>27–28 первичных (68–70 вторичных из 70)</strong>, причём <strong>28/70 — регулярно</strong>; №21–23 решались уверенно — прогноз <strong>80+</strong> был обоснованным.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Блок</th><th>Макс. перв.</th><th>Макс. втор.*</th><th>Результат Славы</th><th>Комментарий</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>1-я часть (зад. 1–20)</td><td>28</td><td>70</td><td><strong>27–28 перв. → 68–70 втор.</strong> (регулярно 28/70)</td><td>На высоком уровне</td></tr>
+        <tr><td>№21 (качественная)</td><td>3</td><td>—</td><td><strong>Решал</strong></td><td>Стабильно</td></tr>
+        <tr><td>№22 (расчётная)</td><td>2</td><td>—</td><td><strong>Решал</strong></td><td>Стабильно</td></tr>
+        <tr><td>№23</td><td>2</td><td>—</td><td><strong>Решал</strong></td><td>Стабильно в большинстве вариантов</td></tr>
+        <tr><td>№24</td><td>3</td><td>—</td><td><strong>Иногда</strong></td><td>Доп. +3 первичных</td></tr>
+        <tr class="highlight"><td><strong>Суммарный прогноз</strong></td><td>~35–37</td><td><strong>80–86</strong></td><td><strong>80+</strong></td><td>1-я часть + №21–23 (+ №24)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-muted)">* Вторичный эквивалент 1-й части — по общей шкале перевода при условии, что 2-я часть = 0. На полном пробнике к 68–70 добавлялись баллы за №21–23 (+10–12 втор.).</p>
+
+  <img class="chart" src="../charts/physics/mock_exam.png" alt="Результаты пробников" loading="lazy">
+  <img class="chart" src="../charts/physics/expected_vs_actual.png" alt="Ожидание vs экзамен" loading="lazy">
+
+  <div class="callout callout-success">
+    <div class="callout-title">Вывод по пробникам и авторскому прогнозу</div>
+    <p style="margin:0">Даже при иногда <strong>несколько путаных объяснениях</strong> на занятиях, расчётная часть давала <strong>+10–12 вторичных баллов</strong> за №21–23 (и иногда №24). В сумме с 1-й частью (68–70 из 70) — прогноз <strong>80+</strong>. Отдельно: <strong>авторский прогнозный вариант</strong> Слава решил на <strong>92%</strong>; его <strong>1-я часть затем совпала с экзаменом полностью</strong>.</p>
+  </div>
+</section>
+
+<!-- 8. EXAM -->
+<section class="block" id="exam">
+  <h2><span class="num">8</span> Экзамен 11 июня: контраст «утро vs бланк»</h2>
+
+  <div class="callout callout-info">
+    <div class="callout-title">Утро 11 июня — разбор 1-й части Дальнего Востока</div>
+    <p style="margin:0">В день экзамена утром были разобраны задания <strong>1-й части</strong> варианта Дальнего Востока. Они <strong>не вызвали затруднений</strong> — Слава решил их и <strong>объяснил самостоятельно</strong>. Это подтверждает: к моменту экзамена <strong>знания были</strong>.</p>
+  </div>
+
+  <div class="callout callout-success">
+    <div class="callout-title">Авторский прогнозный вариант: 92% — и полное совпадение 1-й части с экзаменом</div>
+    <p style="margin:0">Перед экзаменом Слава успешно решил <strong>авторский прогнозный вариант</strong> репетитора на <strong>92%</strong>. При сопоставлении с реальным КИМ выяснилось: <strong>1-я часть прогноза совпала с 1-й частью экзамена полностью</strong> — те же линии, те же типы задач, без «сюрпризов». Следовательно, <strong>не было ни одного задания</strong>, которое он не видел бы на занятиях и которого мог бы по‑настоящему «испугаться» как незнакомого. Страх на бланке — <strong>не про незнание</strong>, а про экзаменационное поведение.</p>
+  </div>
+
+  <div class="callout callout-success">
+    <div class="callout-title">Совпадение с вариантом Дальнего Востока и типичность 1-й части</div>
+    <p style="margin:0"><strong>Все другие мои ученики</strong>, сдававшие физику в тот же день, также отметили <strong>совпадение с вариантом Дальнего Востока</strong>. Вся <strong>1-я часть</strong> центрального варианта оказалась <strong>крайне типичной</strong> — такие задания и прототипы <strong>разбирались на занятиях не один раз</strong>, а авторский прогноз на 92% <strong>подтвердил это заранее</strong>. Утренний разбор ДВ в день экзамена полностью совпал с этой картиной.</p>
+  </div>
+
+  <div class="callout callout-success">
+    <div class="callout-title">Все задания экзамена — пройдены на занятиях</div>
+    <p style="margin:0"><strong>Каждая задача</strong>, которая встретилась на экзамене, <strong>была разобрана с нами на занятиях</strong> — в банке ФИПИ, в вариантах Демидовой или на полных пробниках. <strong>Некоторые задачи встретились с теми же числами</strong>, что и на реальном КИМ. Это не «незнакомый материал» — это материал, который решался, но на экзамене не был доведён до бланка из‑за поведенческих факторов.</p>
+  </div>
+
+  <div class="callout callout-warn">
+    <div class="callout-title">Почему «страх» не имел объективных оснований</div>
+    <p style="margin:0">Авторский прогноз (92%) и утренний разбор ДВ показали одно и то же: <strong>вся 1-я часть экзамена была заранее пройдена</strong>, прогноз совпал с ней <strong>полностью</strong>. Нечего было «бояться впервые» — каждый номер 1–20 Слава уже решал. Ошибки на бланке — <strong>невнимательность и спешка</strong> (~2 ч вместо 4), а не столкновение с неизвестными задачами.</p>
+  </div>
+
+  <div class="chart-row">
+    <img class="chart" src="../charts/physics/exam_day.png" alt="Время на экзамене и разбор ДВ" loading="lazy">
+  </div>
+
+  <h3>Фактический результат на экзамене 11 июня: 53 вторичных (17 первичных)</h3>
+  <p>По официальной шкале перевода ЕГЭ-2026 по физике: <strong>17 первичных = 53 вторичных</strong> — оценка «4». Это на <strong>27+ баллов ниже</strong> ожидаемого уровня по пробникам (80+).</p>
+
+  <img class="chart" src="../charts/physics/exam_result.png" alt="Результат экзамена и факторы потерь" loading="lazy">
+
+  <div class="compare-grid">
+    <div class="compare-box wrong">
+      <div class="label">Экзамен (факт)</div>
+      <div class="answer">53</div>
+      <p style="margin-top:8px;font-size:0.85rem;color:#991B1B">17 первичных · ≈2 часа работы</p>
+    </div>
+    <div class="compare-box right">
+      <div class="label">Авторский прогноз</div>
+      <div class="answer">92%</div>
+      <p style="margin-top:8px;font-size:0.85rem;color:#065F46">1-я часть = экзамен полностью</p>
+    </div>
+    <div class="compare-box right" style="border-color:#A7F3D0;background:#ECFDF5">
+      <div class="label">Пробники (ожидание)</div>
+      <div class="answer">80+</div>
+      <p style="margin-top:8px;font-size:0.85rem;color:#065F46">~35–37 первичных</p>
+    </div>
+  </div>
+
+  <h3>Оценка первичных баллов на экзамене (реконструкция)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Часть</th><th>Макс. перв.</th><th>Макс. втор.*</th><th>Ожидание</th><th>На экзамене</th><th>Разрыв</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>1-я часть (1–20)</td><td>28</td><td>70</td><td>27–28 перв.</td><td>~12–14 перв.**</td><td>−13…−16 перв.</td></tr>
+        <tr><td>2-я часть (21–26)</td><td>17</td><td>—</td><td>7–9 перв.</td><td>~3–5 перв.**</td><td>−4…−6 перв.</td></tr>
+        <tr class="highlight"><td><strong>Итого</strong></td><td>45</td><td>100</td><td>35–37 перв.</td><td><strong>17 перв. = 53 втор.</strong></td><td><strong>−18…−20 перв.</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-muted)">* Макс. втор. для 1-й части — при нуле во 2-й (28 перв. = 70 втор.). ** Оценочная реконструкция; официально — 17 первичных = 53 вторичных.</p>
+</section>
+
+<!-- 9. BEHAVIOR -->
+<section class="block" id="behavior">
+  <h2><span class="num">9</span> Экзаменационное поведение: невнимательность, страх, спешка</h2>
+
+    <div class="callout callout-danger">
+    <div class="callout-title">Главный вывод</div>
+    <p style="margin:0">Разрыв между пробниками (80+), авторским прогнозом (<strong>92%</strong>, 1-я часть = экзамен) и результатом на бланке (53) объясняется <strong>не недостатком подготовки</strong>, а <strong>поведением на экзамене</strong>: невнимательность, необоснованный страх и то, что Слава писал работу <strong>всего ~2 часа вместо 4</strong>.</p>
+  </div>
+
+  <img class="chart" src="../charts/physics/behavior.png" alt="Факторы экзаменационного поведения" loading="lazy">
+
+  <div class="cards-grid">
+    <div class="feature-card" style="border-left:4px solid var(--danger)">
+      <h4>Невнимательность</h4>
+      <p>Ошибки в задачах, которые <strong>разбирались на занятиях</strong> — в том числе <strong>с теми же числами</strong>. Неверная запись ответов, пропуск шагов при переносе с черновика.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--warn)">
+      <h4>Страх без оснований</h4>
+      <p>Авторский прогноз на <strong>92%</strong> совпал с 1-й частью экзамена <strong>полностью</strong> — незнакомых задач не было. Реакция «боюсь» на бланке <strong>не соответствовала</strong> реальной подготовке; №21–23 на пробниках решались стабильно.</p>
+    </div>
+    <div class="feature-card" style="border-left:4px solid var(--accent)">
+      <h4>≈2 часа вместо 4</h4>
+      <p>Экзамен сдан за половину отведённого времени. Нет проверки, нет возврата к сложным номерам, нет переписывания с черновика.</p>
+    </div>
+  </div>
+
+  <div class="donut-grid">
+    <div class="donut-card">
+      <h4>Причина разрыва 80+ → 53</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#EF4444" stroke-width="12"
+          stroke-dasharray="88 163" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="12"
+          stroke-dasharray="163 88" stroke-dashoffset="-26" transform="rotate(-90 50 50)"/>
+        <text x="50" y="48" text-anchor="middle" font-size="11" font-weight="700" fill="#991B1B">~65%</text>
+        <text x="50" y="58" text-anchor="middle" font-size="5.5" fill="#64748B">поведение</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#EF4444"></i> Поведение на экзамене</span>
+        <span><i style="background:#10B981"></i> Знания (есть)</span>
+      </div>
+    </div>
+    <div class="donut-card">
+      <h4>Использование времени</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#EF4444" stroke-width="14"
+          stroke-dasharray="126 125" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#94A3B8" stroke-width="14"
+          stroke-dasharray="125 126" stroke-dashoffset="-64" transform="rotate(-90 50 50)"/>
+        <text x="50" y="52" text-anchor="middle" font-size="12" font-weight="700" fill="#991B1B">50%</text>
+      </svg>
+      <div class="donut-legend">
+        <span><i style="background:#EF4444"></i> ~2 ч работы</span>
+        <span><i style="background:#94A3B8"></i> ~2 ч не использовано</span>
+      </div>
+    </div>
+    <div class="donut-card">
+      <h4>Утро vs экзамен</h4>
+      <svg class="donut-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#10B981" stroke-width="14"
+          stroke-dasharray="251 0" stroke-dashoffset="62" transform="rotate(-90 50 50)"/>
+        <text x="50" y="48" text-anchor="middle" font-size="9" font-weight="700" fill="#065F46">ДВ ✓</text>
+        <text x="50" y="58" text-anchor="middle" font-size="5.5" fill="#64748B">без ошибок</text>
+      </svg>
+      <div class="donut-legend">
+        <span>Знания подтверждены утром; на бланке — другой режим</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-success">
+    <div class="callout-title">Что это доказывает</div>
+    <p style="margin:0">Подготовка дала <strong>измеримый результат</strong>: авторский прогноз — <strong>92%</strong>, причём <strong>1-я часть совпала с экзаменом полностью</strong> — незнакомых задач не было. Утренний разбор ДВ 11 июня — без затруднений. Результат <strong>53 балла</strong> объясняется только экзаменационной дисциплиной (невнимательность, необоснованный страх, ~2 ч), а не отсутствием знаний.</p>
+  </div>
+</section>
+
+<!-- 10. SUMMARY -->
+<section class="block" id="summary">
+  <h2><span class="num">10</span> Итоги и выводы</h2>
+
+  <div class="callout callout-success">
+    <ul style="padding-left:1.25rem;margin:0">
+      <li><strong>Старт:</strong> входной контроль ≈ вариант ЕГЭ — уверенна только кинематика (3–4 задания), остальное — догадки; 2-я часть — 0</li>
+      <li><strong>Фундамент:</strong> ликвидация пробелов 7–10 классов — обязательное условие перед ЕГЭ</li>
+      <li><strong>Фаза базы:</strong> пробелы 7–10 кл. + 14 разделов; к формату ЕГЭ — <strong>~2,5 месяца</strong></li>
+      <li><strong>2× банк ФИПИ</strong> и <strong>2× методические материалы Демидовой</strong> (структура совпала с программой)</li>
+      <li><strong>14 разделов</strong> пройдены с нуля; контроли: 65–72% → 90–95% после повторения</li>
+      <li><strong>1-я часть:</strong> макс. 28 перв. = 70 втор.; на пробниках — 68–70/70 (27–28 перв.)</li>
+      <li><strong>Пробники:</strong> №21–23 стабильно, иногда №24 → прогноз 80+</li>
+      <li><strong>Авторский прогноз:</strong> решён на 92%; <strong>1-я часть совпала с экзаменом полностью</strong> — незнакомых задач не было</li>
+      <li><strong>Экзамен 11.06:</strong> все задачи разбирались на занятиях (часть — с теми же числами); совпадение с ДВ, 1-я часть типичная</li>
+      <li><strong>Утро 11.06:</strong> 1-я часть ДВ — решил и объяснил самостоятельно</li>
+      <li><strong>Экзамен:</strong> 53 вторичных (17 первичных), ~2 часа вместо 4 — оценка «4»</li>
+      <li><strong>Разрыв 80+ → 53:</strong> невнимательность, страх, спешка — не незнание</li>
+    </ul>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Показатель</th><th>Первичные</th><th>Вторичные</th><th>%</th><th>Оценка</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Входной контроль (оценка)</td><td>~4–6</td><td>~18–27</td><td>~18–27%</td><td>2–3</td></tr>
+        <tr><td>Темат. контроль (1-й проход)</td><td>—</td><td>—</td><td>65–72%</td><td>—</td></tr>
+        <tr><td>Темат. контроль (2-й проход)</td><td>—</td><td>—</td><td>90–95%</td><td>—</td></tr>
+        <tr><td>Пробник (1-я часть)</td><td>27–28</td><td>68–70</td><td>68–70%</td><td>5</td></tr>
+        <tr><td>Авторский прогноз (полный)</td><td>~35–37</td><td>80–86</td><td>92%</td><td>5</td></tr>
+        <tr class="highlight"><td><strong>Экзамен 11.06.2026</strong></td><td><strong>17</strong></td><td><strong>53</strong></td><td><strong>53%</strong></td><td><strong>4</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Обобщающий вывод</h3>
+  <p>Когда ко мне пришёл Вячеслав по физике, его уровень был <strong>критически низким</strong>: на входном тесте (фактически вариант ЕГЭ) он уверенно решал только задачи по <strong>кинематике</strong>, а о второй части речи не шло. Чтобы выйти на формат экзамена, пришлось <strong>заново пройти физику с первых разделов</strong> и параллельно закрыть пробелы <strong>7–10 классов</strong>.</p>
+
+  <p>Мы последовательно изучили <strong>14 разделов</strong> — от кинематики до квантовой физики — с тематическими контролями после каждого (сначала 65–72%, после повторения 90–95%). К формату ЕГЭ непосредственно готовились <strong>около 2,5 месяцев</strong> — после базы. <strong>Дважды полностью</strong> прошли открытый банк ФИПИ и методические материалы <strong>Демидовой</strong>. На полных вариантах 1-я часть стабильно давала <strong>27–28 первичных (68–70 вторичных из 70)</strong>, <strong>28/70 — регулярно</strong>; №21–23 решались уверенно — прогноз <strong>80+</strong> был обоснованным.</p>
+
+  <p>Утром <strong>11 июня</strong> Слава <strong>без затруднений</strong> разобрал 1-ю часть варианта Дальнего Востока. Заранее он успешно прошёл <strong>авторский прогнозный вариант на 92%</strong> — и <strong>1-я часть этого прогноза совпала с экзаменом полностью</strong>, задача к задаче. <strong>Нечего было бояться как «впервые увиденного»</strong>: все номера проходили на занятиях, часть — с теми же числами. На бланке — <strong>53 балла</strong> (17 первичных) за <strong>~2 часа</strong> из‑за невнимательности и необоснованного страха, а не незнания.</p>
+
+  <div class="callout callout-info">
+    <div class="callout-title">Ключевые цифры одной строкой</div>
+    <p style="margin:0"><strong>14</strong> разделов &nbsp;·&nbsp; <strong>~2,5 мес.</strong> к формату ЕГЭ &nbsp;·&nbsp; <strong>92%</strong> авторский прогноз &nbsp;·&nbsp; <strong>1-я часть = экзамен</strong> &nbsp;·&nbsp; <strong>53</strong> на экзамене 11.06 &nbsp;·&nbsp; <strong>~2 ч</strong> из 4</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  Аудит подготовки к ЕГЭ-2026 · Вячеслав · Физика · Экзамен 11 июня · Отчёт репетитора
+</footer>
+
+<script src="../js/lightbox.js"></script>
+<script>
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

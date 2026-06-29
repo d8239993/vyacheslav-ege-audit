@@ -1,18 +1,22 @@
-# Аудит подготовки к ЕГЭ — Вячеслав (профильная математика, 2026)
+# Аудит подготовки к ЕГЭ — Вячеслав (2026)
 
-Отчёт о подготовке ученика: диагностика, динамика баллов, банк ФИПИ, аудит бланков.
+Отчёты о подготовке ученика: диагностика, динамика баллов, банк ФИПИ, аудит экзамена.
 
 - **Репозиторий:** [d8239993/vyacheslav-ege-audit](https://github.com/d8239993/vyacheslav-ege-audit)
-- **Публичный сайт:** [https://d8239993.github.io/vyacheslav-ege-audit/](https://d8239993.github.io/vyacheslav-ege-audit/)
+- **Математика (профиль):** [https://d8239993.github.io/vyacheslav-ege-audit/](https://d8239993.github.io/vyacheslav-ege-audit/)
+- **Физика:** [https://d8239993.github.io/vyacheslav-ege-audit/physics/](https://d8239993.github.io/vyacheslav-ege-audit/physics/)
 
 ## Структура
 
-- `index.html` — основной отчёт
-- `css/styles.css` — стили (mobile-first)
-- `charts/` — диаграммы (PNG)
+- `index.html` — отчёт по профильной математике
+- `physics/index.html` — отчёт по физике
+- `css/styles.css` — общие стили (mobile-first)
+- `physics/css/physics.css` — тема отчёта по физике
+- `js/lightbox.js` — увеличение таблиц и диаграмм по клику
+- `charts/` — диаграммы (PNG), в т.ч. `charts/physics/`
 - `package_for_pages.py` — сборка `_site` для GitHub Pages
 - `.github/workflows/pages.yml` — автодеплой при push в `main`
-- `generate_report.py` — локальная перегенерация графиков (не публикуется)
+- `generate_report.py`, `generate_physics_report.py` — локальная перегенерация графиков
 
 ## Локальный просмотр
 
